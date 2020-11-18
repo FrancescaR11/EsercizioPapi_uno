@@ -1,0 +1,5 @@
+Specifica Esercizio Papi Metodo del Gradiente
+
+Problema: Scrivere uno script in Matlab che, partendo da un punto iniziale, definito dall’utente, calcola, attraverso delle iterazioni successive, un valore approssimato per il minimo. Usare il metodo di discesa dell’antigradiente. 
+
+Il criterio di arresto si basa sulla condizione prestabilita. 
