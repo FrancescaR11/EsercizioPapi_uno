@@ -20,17 +20,19 @@ mesh(X,Y,Z);
 X0=1;
 Y0=1;
 Z0 = f_task1 (X0,Y0);
+
 %gradiente
 dk=gradf(X0,Y0);
+
 %lungo tale direzione cerco lk>0 tale che f(xk+lk*dk)<f(xk)
 %calcolo passo di discesa lk
+
 e=0.00001;
 lk=0.005;
 X=X0;
 Y=Y0;
 k=0;
 exit=0; 
-% syms x y;
 H=[4 , 0 ; 0 , 6];
 iterazioni=0;
 
@@ -38,9 +40,7 @@ while not(exit)
     dk=gradf(X,Y);
     if norm(dk)<e
         disp('trovato minimo');
-        norm(dk);
         exit=1;
-        %break
     else
         iterazioni= iterazioni+1;
         X=X+lk*dk(1);  %-1
@@ -56,4 +56,4 @@ hold on
 plot3(X,Y,Zmin,'b*','Markersize',20)
 
 
-%X e Y sono praticamente zero
+
