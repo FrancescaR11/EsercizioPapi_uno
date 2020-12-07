@@ -1,0 +1,5 @@
+Task 2
+
+Implementare il metodo Branch-Bound per un problema di PLI con 2 variabili, in cui si hanno vincoli di disuguaglianza lineare.
+
+
