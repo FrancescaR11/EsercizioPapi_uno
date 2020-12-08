@@ -1,0 +1,4 @@
+
+Specifica Task 3
+
+Implementare in Matlab l’algoritmo per risolvere il problema KP(n,b).
