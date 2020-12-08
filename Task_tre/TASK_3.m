@@ -4,13 +4,27 @@ clc
 
 %IMPLEMENTO IL PROBLEMA DELLO ZAINO KP
 
-n=3; % variabili
+% Primo Test
+
+% n=3; % variabili
+% 
+% b=5; % capacità massima zaino
+% 
+% a=[1 2 3]; % spazio occupato dagli oggetti
+% 
+% c=[6 10 12]; % valore degli oggetti
+% 
+% d=[0:b]; 
+
+% Secondo Test
+
+n=5; % variabili
 
 b=5; % capacità massima zaino
 
-a=[1 2 3]; % spazio occupato dagli oggetti
+a=[2 3 7 5 9]; % spazio occupato dagli oggetti
 
-c=[6 10 12]; % valore degli oggetti
+c=[12 24 7 10 6]; % valore degli oggetti
 
 d=[0:b]; 
 
