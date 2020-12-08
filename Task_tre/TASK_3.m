@@ -96,7 +96,7 @@ end
 
 configurazione_ottima= x_ott(:,length(d));
 
-% Il massimo della funzione obiettivo per il problema KP è il
+% Il massimo della funzione obiettivo per il problema KP è in
 % corrispondenza di z(n,length(d))
 
 max_funzione=z(n,length(d));
