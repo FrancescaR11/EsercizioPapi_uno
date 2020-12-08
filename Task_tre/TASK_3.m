@@ -2,7 +2,7 @@ close all
 clear all
 clc
 
-%IMPLEMENTO IL PROBLEMA DELLO ZAINO KP
+%IMPLEMENTO IL PROBLEMA DELLO ZAINO KP(n,b)
 
 % Primo Test
 
