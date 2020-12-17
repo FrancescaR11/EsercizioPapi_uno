@@ -2,7 +2,7 @@ close all
 clear all
 clc
 
-%IMPLEMENTO IL PROBLEMA DELLO ZAINO KP(n,b)
+%% IMPLEMENTO IL PROBLEMA DELLO ZAINO KP(n,b)
 
 % Primo Test
 
@@ -114,6 +114,57 @@ configurazione_ottima= x_ott(:,length(d));
 % corrispondenza di z(n,length(d))
 
 max_funzione=z(n,length(d));
+
+%% Caso con matrice ( Problema tubo di lunghezza l da dividere in al più n segmenti)
+
+% R matrice ricavo
+
+%max_funzione(l,p)=R(end,end);
+
+% length(l)=n;
+n=5;
+R=zeros(n,length(l));
+
+%dati di inupt
+
+%l=vettore lunghezze
+%p= vettori ricavi
+%n= lunghezza vettori l e p
+%L= lunghezza totale tubo, ovviamente l[i]<L
+
+% INIZIALIZZO MATRICE R
+
+for j=1:L+1
+    
+    if j>=l(1)
+        
+        R(1,j)=p(1);
+    else
+        R(1,j)=0;
+    end
+end
+    
+
+% Calcolo la matrice R : inizio Programmazione Dinamica
+
+for i=2:n
+    
+    for j=1:L+1
+    
+    if j>=l(i) && (R(i-1,j-l(i)+p(i))> R(i-1,j))
+    
+        R(i,j)=R(i-1,j-l(i))+p(i);
+    else
+         R(i,j)= R(i-1,j);
+    end
+    end
+    
+end
+
+
+max_funzione(l,p)=R(n,l);
+
+
 
 
 
