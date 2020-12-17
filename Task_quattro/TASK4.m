@@ -82,7 +82,7 @@ fottimale1=-fottimale1;
          %min  f(x,D)
 
 %Mi metto nella situazione peggiore: il venditore sceglie di acquistare il
-%maggior numeor di giornali, nell'ipotesi di venderne il meno possibile
+%maggior numero di giornali, nell'ipotesi di venderne il meno possibile
 
 xmin2=[];
 
@@ -148,6 +148,7 @@ end
 fottimale2=-fottimale2; 
 
 %% METODO 3
+
 % Programmazione stocastica
 
 % Considero per ogni valore di x ammisibile, f(x,D) come v.a. e calcolo il
